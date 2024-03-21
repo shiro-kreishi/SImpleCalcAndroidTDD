@@ -206,7 +206,7 @@ class SimpleCalcUiTest {
             allOf(
                 isAssignableFrom(Button::class.java),
                 withId(R.id.button_reverse),
-                withText("+/-"),
+                withText("+-"),
                 withParent(isAssignableFrom(LinearLayout::class.java)),
                 withParent(withId(R.id.buttons_line_5)),
             )
