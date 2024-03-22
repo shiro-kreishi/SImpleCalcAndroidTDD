@@ -44,6 +44,24 @@ class SimpleCalcUiTest {
 
         onView(
             allOf(
+                isAssignableFrom(TextView::class.java),
+                withId(R.id.solution),
+                withParent(isAssignableFrom(LinearLayout::class.java)),
+                withParent(withId(R.id.rootLayout)),
+            )
+        ).check(matches(isDisplayed()))
+
+        onView(
+            allOf(
+                isAssignableFrom(TextView::class.java),
+                withId(R.id.result),
+                withParent(isAssignableFrom(LinearLayout::class.java)),
+                withParent(withId(R.id.rootLayout)),
+            )
+        ).check(matches(isDisplayed()))
+
+        onView(
+            allOf(
                 isAssignableFrom(Button::class.java),
                 withId(R.id.button_c),
                 withText("C"),
