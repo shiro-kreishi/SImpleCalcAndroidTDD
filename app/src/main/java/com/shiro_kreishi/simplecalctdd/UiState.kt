@@ -16,6 +16,8 @@ interface UiState: Serializable {
             return originalString+substring
         }
         override fun apply(textView: TextView, button: Button) {
+
+            textView.text = if (textView.text.isEmpty()) "0" else textView.text
             textView.text = removeLastSubstring(textView.text.toString(), text)
         }
     }

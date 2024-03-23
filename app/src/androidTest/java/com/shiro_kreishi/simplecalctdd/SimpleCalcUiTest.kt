@@ -332,7 +332,7 @@ class SimpleCalcUiTest {
 
         onView(withId(R.id.button_1)).perform(click())
         onView(withId(R.id.button_equals)).perform(click())
-        onView(withId(R.id.solution)).check(matches(withText("1")))
+        onView(withId(R.id.solution)).check(matches(withText("1.0")))
         clean_solution()
     }
 
