@@ -58,8 +58,13 @@ class MainActivity : AppCompatActivity() {
             val text = if (solutionTextView.text.isEmpty()) "0"
             else solutionTextView.text.toString()
             val count = Count(text)
-            resultTextView.text = count.equal()
-            solutionTextView.text = resultTextView.text
+            try {
+                resultTextView.text = count.equal().toString()
+                solutionTextView.text = resultTextView.text
+            }
+            catch (e: Exception) {
+                resultTextView.text = e.message
+            }
         }
     }
 

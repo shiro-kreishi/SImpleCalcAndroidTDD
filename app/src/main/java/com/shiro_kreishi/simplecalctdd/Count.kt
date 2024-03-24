@@ -3,12 +3,12 @@ package com.shiro_kreishi.simplecalctdd
 import com.notkamui.keval.Keval
 
 class Count(private val expression: String) {
-    fun equal(): String {
-        var result = "0"
+    fun equal(): Double {
+        var result = 0.0
         result = try {
-            Keval.eval(expression).toString()
+            Keval.eval(expression)
         } catch (e: Exception) {
-            "invalid expression"
+            throw Exception("invalid expression")
         }
 
         return result

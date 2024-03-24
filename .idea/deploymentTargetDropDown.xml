@@ -2,22 +2,7 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="MainActivity">
-        <State />
-      </entry>
       <entry key="app">
-        <State />
-      </entry>
-      <entry key="test_3_clean_solution()">
-        <State />
-      </entry>
-      <entry key="test_4_calc_checking_buttons_handler()">
-        <State />
-      </entry>
-      <entry key="test_4_calc_checking_buttons_number_handler()">
-        <State />
-      </entry>
-      <entry key="test_5_calc_checking_buttons_operation_handler()">
         <State />
       </entry>
     </value>
