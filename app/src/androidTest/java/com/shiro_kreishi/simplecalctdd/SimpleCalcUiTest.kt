@@ -338,7 +338,7 @@ class SimpleCalcUiTest {
 
     @Test
     fun test_6_calc_checking_buttons_math_symbols_handler() {
-        onView(withId(R.id.button_0)).perform(click())
+        onView(withId(R.id.button_dot)).perform(click())
         onView(withId(R.id.button_dot)).perform(click())
         onView(withId(R.id.button_dot)).perform(click())
         onView(withId(R.id.button_1)).perform(click())

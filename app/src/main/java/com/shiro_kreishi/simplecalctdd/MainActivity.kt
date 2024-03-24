@@ -52,6 +52,13 @@ class MainActivity : AppCompatActivity() {
         val btnSub = findViewById<Button>(R.id.button_subtraction)
         btnSub.setOnClickListener { btnSubState.apply(solutionTextView, btnSub) }
 
+        val btnDotState = UiState.MathOperator(".")
+        val btnDot = findViewById<Button>(R.id.button_dot)
+        btnDot.setOnClickListener { btnDotState.apply(solutionTextView, btnDot) }
+
+        val btnReverseState = UiState.MathSymbol("(-")
+        val btnReverse = findViewById<Button>(R.id.button_reverse)
+        btnReverse.setOnClickListener { btnReverseState.apply(solutionTextView, btnReverse) }
 
         val equalBtn = findViewById<Button>(R.id.button_equals)
         equalBtn.setOnClickListener {
