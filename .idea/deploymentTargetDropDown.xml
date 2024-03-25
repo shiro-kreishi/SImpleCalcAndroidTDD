@@ -2,10 +2,16 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="SimpleCalcUiTest">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>
       <entry key="test_6_calc_checking_buttons_math_symbols_handler()">
+        <State />
+      </entry>
+      <entry key="test_7_calculation_check()">
         <State />
       </entry>
     </value>

@@ -351,4 +351,25 @@ class SimpleCalcUiTest {
         onView(withId(R.id.solution)).check(matches(withText("")))
         clean_solution()
     }
+
+    @Test
+    fun test_7_calculation_check() {
+        clean_solution()
+        onView(withId(R.id.button_1)).perform(click())
+        onView(withId(R.id.button_addition)).perform(click())
+        onView(withId(R.id.button_1)).perform(click())
+        onView(withId(R.id.solution)).check(matches(withText("1+1")))
+        onView(withId(R.id.button_equals)).perform(click())
+        onView(withId(R.id.result)).check(matches(withText("2.0")))
+
+        clean_solution()
+        onView(withId(R.id.button_2)).perform(click())
+        onView(withId(R.id.button_addition)).perform(click())
+        onView(withId(R.id.button_2)).perform(click())
+        onView(withId(R.id.button_multiply)).perform(click())
+        onView(withId(R.id.button_2)).perform(click())
+        onView(withId(R.id.solution)).check(matches(withText("2+2*2")))
+        onView(withId(R.id.button_equals)).perform(click())
+        onView(withId(R.id.result)).check(matches(withText("6.0")))
+    }
 }
